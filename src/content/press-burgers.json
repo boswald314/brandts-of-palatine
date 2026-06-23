@@ -1,0 +1,20 @@
+{
+  "key": "press-burgers",
+  "title": "Chicago's Best Burgers — Brandt's of Palatine",
+  "metaDesc": "",
+  "blocks": [
+    {
+      "type": "text",
+      "tag": "div",
+      "text": "Features Overview",
+      "html": "\n  <h1 style=\"text-align:center;white-space:pre-wrap;\">Features Overview</h1>\n"
+    },
+    {
+      "type": "text",
+      "tag": "div",
+      "text": "Brandt’s featured on Chicago’s Best burgersCheck out the video below!",
+      "html": "\n  <h3 style=\"white-space:pre-wrap;\">Brandt’s featured on Chicago’s Best burgers</h3><p class=\"\" data-rte-preserve-empty=\"true\" style=\"white-space:pre-wrap;\"></p><p class=\"\" style=\"white-space:pre-wrap;\">Check out the video below!</p>\n"
+    }
+  ],
+  "slug": "chicagos-best-burgers"
+}

@@ -1,0 +1,35 @@
+Brandt's of Palatine menu — display font attribution
+=====================================================
+
+Display typeface (logo + section headers): "Cloister Black"
+  An authentic Textura blackletter. The design is the American Type
+  Founders (ATF) blackletter originally cut by Morris Fuller Benton
+  (1904); this digitization was produced and released by German
+  typographer Dieter Steffmann (Typographer Mediengestaltung, 2001).
+  Distributed free for both personal and commercial use, including
+  embedding in documents and web pages.
+  Designer site: http://www.steffmann.de/
+
+Why this font: it is the same design lineage as "Old English Text MT"
+(the proprietary Monotype face the original printed menu uses), so its
+letterforms — in particular the capital "B" of the Brandt's logo —
+match the real menu. It is free for commercial use and embeds cleanly
+in both the HTML and the print PDF, so the menu renders identically
+everywhere with no licensing cost.
+
+Embedded file: CloisterBlack.woff (subset/format suitable for @font-face).
+
+Body text uses the system serif stack (Georgia / Times), which requires
+no embedding or licensing.
+
+----------------------------------------------------------------------
+NOTE ON THE EXACT BRAND FONT
+----------------------------------------------------------------------
+If you own a license for "Old English Text MT" itself and want
+pixel-exact output, drop its .woff2/.woff/.otf/.ttf into this folder,
+point build.py's FONT_FILE at it, and rerun the build. The builder
+auto-detects the format; everything else stays the same.
+
+(The previous substitute, "Old English CD," was a Computer-Modern-derived
+Textura that read too clean/clinical and whose capital "B" diverged from
+the logo; it has been replaced by Cloister Black.)

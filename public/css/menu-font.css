@@ -1,0 +1,14 @@
+/*
+ * Brandt's menu display typeface.
+ * "BrandtsBlackletter" = Cloister Black — Dieter Steffmann's digitization of the
+ * ATF Cloister Black (Morris Fuller Benton, 1904). Free for personal & commercial
+ * use, including web embedding. See assets/fonts/FONT-LICENSE.txt.
+ * Used for the masthead logo and the brick-red section headers in menu.css.
+ */
+@font-face {
+  font-family: 'BrandtsBlackletter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../assets/fonts/CloisterBlack.woff) format('woff');
+}

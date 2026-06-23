@@ -1,0 +1,20 @@
+{
+  "key": "press-abc",
+  "title": "ABC News Review — Brandt's of Palatine",
+  "metaDesc": "",
+  "blocks": [
+    {
+      "type": "text",
+      "tag": "div",
+      "text": "Check out Steve Dolinsky's (The Hungry Hound) review of Brandt's on ABC News! Hungry Hound Review",
+      "html": "\n  <h3><em>Check out Steve Dolinsky's (The Hungry Hound) review of Brandt's on ABC News!&nbsp;</em></h3><p>&nbsp;<a href=\"http://abclocal.go.com/wls/story?section=resources/lifestyle_community/food/restaurants&amp;id=9247451\">&nbsp;</a><a href=\"http://abclocal.go.com/wls/story?section=resources/lifestyle_community/food/restaurants&amp;id=9247451\">Hungry Hound Review</a></p>\n"
+    },
+    {
+      "type": "image",
+      "src": "https://images.squarespace-cdn.com/content/v1/511c4d49e4b00307a26184cc/1379292417483-9LRE1G116WWCBY1P25CS/Screen+Shot+2013-09-15+at+7.34.09+PM.png",
+      "alt": "",
+      "_local": "Screen-Shot-2013-09-15-at-7.34.09-PM.png"
+    }
+  ],
+  "slug": "abc-news-review"
+}

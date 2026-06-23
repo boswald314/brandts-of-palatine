@@ -1,0 +1,26 @@
+{
+  "key": "contact",
+  "title": "Contact Us — Brandt's of Palatine",
+  "metaDesc": "",
+  "blocks": [
+    {
+      "type": "text",
+      "tag": "div",
+      "text": "We would love to hear from you!",
+      "html": "\n  <h1>We would love to hear from you!</h1>\n"
+    },
+    {
+      "type": "image",
+      "src": "https://images.squarespace-cdn.com/content/v1/511c4d49e4b00307a26184cc/1360818305883-D4T1GZ775BFUUYMW9WTX/file3991282945508.jpg",
+      "alt": "file3991282945508.jpg",
+      "_local": "file3991282945508.jpg"
+    },
+    {
+      "type": "text",
+      "tag": "div",
+      "text": "Twitter / Facebook / brandtsofpalatine@gmail.com",
+      "html": "\n  <p><a href=\"http://twitter.com/brandtspalatine\">Twitter</a> / <a href=\"//facebook.com\">Facebook</a> / <a href=\"mailto:brandtsofpalatine@gmail.com\">brandtsofpalatine@</a><a href=\"mailto:brandtsofpalatine@gmail.com\">gmail.com</a></p>\n"
+    }
+  ],
+  "slug": "contact"
+}

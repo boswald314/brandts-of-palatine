@@ -1,0 +1,14 @@
+{
+  "key": "party-menu",
+  "title": "Pub Room Party Menu — Brandt's of Palatine",
+  "metaDesc": "",
+  "blocks": [
+    {
+      "type": "image",
+      "src": "https://images.squarespace-cdn.com/content/v1/511c4d49e4b00307a26184cc/9cefabe3-e439-4e62-b0ed-75fa10eb8a4f/Pub+Room+Party+Menu.jpg",
+      "alt": "",
+      "_local": "Pub-Room-Party-Menu.jpg"
+    }
+  ],
+  "slug": "pub-room-party-menu"
+}

@@ -1,0 +1,14 @@
+{
+  "key": "location",
+  "title": "Phone Number / Address — Brandt's of Palatine",
+  "metaDesc": "",
+  "blocks": [
+    {
+      "type": "text",
+      "tag": "div",
+      "text": "Phone Number: 847-496-4388We are located at the southwest corner of northwest Highway and Quentin road. Our address is:807 W NW Hwy Palatine, IL 60067",
+      "html": "\n  <h2 style=\"white-space:pre-wrap;\">Phone Number: &nbsp; 847-496-4388</h2><p class=\"\" style=\"white-space:pre-wrap;\">We are located at the southwest corner of northwest Highway and Quentin road. Our address is:</p><p class=\"\" style=\"white-space:pre-wrap;\">807 W NW Hwy &nbsp;Palatine, IL 60067</p><p class=\"\" data-rte-preserve-empty=\"true\" style=\"white-space:pre-wrap;\"></p>\n"
+    }
+  ],
+  "slug": "location-information"
+}

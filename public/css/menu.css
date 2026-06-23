@@ -1,0 +1,234 @@
+/* ==========================================================================
+   Brandt's food menu — styles for the owner-provided responsive menu.
+   ALL rules are scoped under .menu-document so they never touch the site shell
+   (header/nav/footer keep their own theme). Original design rev 9/25.
+   The blackletter logo face is loaded from menu-font.css (separate file so the
+   large embedded font data can't disrupt these rules).
+   ========================================================================== */
+
+.menu-document {
+    /* design tokens — scoped to the menu only */
+    --paper: #f1e7c8;     /* warm cream menu stock (screen only) */
+    --ink: #221d15;       /* warm near-black ink */
+    --accent: #8a2222;    /* brick red headers */
+    --rule: #1a1610;      /* thick black rules */
+    --leader: #b0a484;    /* dotted leader dots */
+    --muted: #4c4536;     /* warm muted serif (descriptions) */
+    --base: 15px;
+    --font-logo: 'BrandtsBlackletter', Georgia, serif;
+    --font-head: 'BrandtsBlackletter', Georgia, serif;
+    --font-body: Georgia, 'Times New Roman', 'Times', serif;
+
+    background: #241d16;  /* dark surround so the cream pages glow */
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: var(--base);
+    line-height: 1.3;
+    -webkit-font-smoothing: antialiased;
+    padding: 0.5rem 0 2rem;
+}
+
+.menu-document * { box-sizing: border-box; }
+
+/* page sheet ------------------------------------------------------------- */
+.menu-document .page {
+    position: relative;
+    background-color: var(--paper);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.14 0 0 0 0 0.10 0 0 0 0 0.05 0 0 0 0.6 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    max-width: 860px;
+    margin: 24px auto;
+    padding: 42px 50px 32px;
+    box-shadow: 0 8px 38px rgba(0, 0, 0, .5);
+    border: 1px solid #d8c9a2;
+}
+
+/* masthead --------------------------------------------------------------- */
+.menu-document .masthead { text-align: center; margin-bottom: 8px; }
+.menu-document .logo {
+    font-family: var(--font-logo);
+    font-size: 3.5rem;
+    line-height: .9;
+    letter-spacing: .5px;
+    color: var(--ink);
+    text-transform: none;
+}
+.menu-document .sublogo {
+    font-family: var(--font-body);
+    font-weight: 700;
+    letter-spacing: .42em;
+    font-size: .82rem;
+    padding-left: .42em;
+    margin-top: 5px;
+}
+
+/* section titles --------------------------------------------------------- */
+.menu-document .sec { border-top: 3px solid var(--rule); padding-top: 8px; margin-top: 14px; }
+.menu-document .sec-title {
+    font-family: var(--font-head);
+    color: var(--accent);
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.62rem;
+    margin: .06em 0 .42em;
+    line-height: 1.02;
+    position: relative;
+    text-transform: none;   /* override the site's global uppercase h2 */
+    letter-spacing: normal;
+}
+.menu-document .eyebrow {
+    font-family: var(--font-body);
+    display: inline-block;
+    font-size: .46em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--ink);
+    letter-spacing: .05em;
+    vertical-align: .62em;
+    margin-right: .34em;
+    line-height: 1;
+}
+.menu-document .hand {
+    font-family: var(--font-body);
+    color: var(--accent);
+    font-size: .66em;
+    vertical-align: .1em;
+    margin-right: .1em;
+}
+
+/* intros ----------------------------------------------------------------- */
+.menu-document .intro,
+.menu-document .intro-split { font-size: .82rem; color: var(--muted); margin: 0 0 .5em; }
+.menu-document .intro { text-align: center; }
+.menu-document .intro-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 26px;
+    text-align: center;
+}
+.menu-document .footnote { font-size: .78rem; color: var(--muted); text-align: center; margin: .55em 0 0; }
+
+/* item rows -------------------------------------------------------------- */
+.menu-document .item { margin: .34em 0; break-inside: avoid; }
+.menu-document .row { display: flex; align-items: baseline; width: 100%; }
+/* Names may wrap when a column is narrow so the price never spills off-page;
+   short names still sit on one line and the leader fills the gap as before. */
+.menu-document .iname { font-weight: 700; min-width: 0; }
+.menu-document .iprice {
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+    padding-left: .4em;
+    align-self: flex-end;
+}
+.menu-document .leader {
+    flex: 1 1 auto;
+    align-self: flex-end;
+    border-bottom: 1.5px dotted var(--leader);
+    margin: 0 .25em .26em;
+    min-width: 1.4em;
+}
+.menu-document .row.no-price .iname { white-space: normal; }
+.menu-document .idesc { font-size: .8rem; color: var(--muted); margin-top: .04em; max-width: 46em; }
+
+/* column grids ----------------------------------------------------------- */
+.menu-document .cols-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 30px; }
+.menu-document .cols-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 0 24px; }
+.menu-document .col { min-width: 0; }   /* allow columns to shrink below content width */
+.menu-document .cols-2 .col + .col,
+.menu-document .cols-3 .col + .col { border-left: 1px solid var(--rule); padding-left: 30px; }
+.menu-document .cols-3 .col + .col { padding-left: 24px; }
+.menu-document .list { max-width: 100%; }
+
+/* inline list (potato choices) ------------------------------------------ */
+.menu-document .inline-list {
+    text-align: center;
+    font-weight: 700;
+    font-size: .96rem;
+    margin: .2em 0;
+    line-height: 1.5;
+}
+.menu-document .star { color: var(--accent); font-weight: 400; }
+
+/* feature (the burger) --------------------------------------------------- */
+.menu-document .feature-price { text-align: center; font-weight: 700; font-size: 1.15rem; margin: .1em 0 .35em; }
+.menu-document .feature-desc { text-align: center; margin: .12em 0; font-size: .92rem; }
+.menu-document .feature-opt { text-align: center; margin: .16em 0; font-size: .82rem; color: var(--muted); }
+.menu-document .feature-extras { margin-top: .7em; }
+
+/* disclaimer ------------------------------------------------------------- */
+.menu-document .disclaimer {
+    border-top: 3px solid var(--rule);
+    margin-top: 16px;
+    padding-top: 8px;
+    font-size: .72rem;
+    color: var(--muted);
+}
+.menu-document .rev { float: right; }
+.menu-document .leaf,
+.menu-document .star,
+.menu-document .hand { user-select: none; }
+
+/* ---------------- responsive (web) ---------------- */
+@media (max-width: 640px) {
+    .menu-document { font-size: 14px; }
+    .menu-document .page {
+        margin: 0;
+        padding: 24px 18px 20px;
+        box-shadow: none;
+        border: 0;
+        max-width: 100%;
+    }
+    .menu-document .logo { font-size: 2.6rem; }
+    .menu-document .cols-2,
+    .menu-document .cols-3,
+    .menu-document .intro-split { grid-template-columns: 1fr; gap: 0; }
+    .menu-document .cols-2 .col + .col,
+    .menu-document .cols-3 .col + .col {
+        border-left: 0;
+        padding-left: 0;
+        border-top: 1px solid #ddd8cd;
+        margin-top: .5em;
+        padding-top: .5em;
+    }
+    .menu-document .intro-split { gap: .2em 0; }
+    .menu-document .idesc { max-width: none; }
+    .menu-document .rev { float: none; display: block; margin-top: .3em; }
+}
+
+/* ---------------- print / PDF ---------------- */
+@page { size: 8.5in 14in; margin: 0.36in 0.5in; }
+@media print {
+    /* hide the site chrome so only the menu prints */
+    .site-header, .site-footer, .skip-link, .menu-toolbar { display: none !important; }
+    body { background: #fff !important; }
+    .menu-document {
+        background: #fff !important;
+        padding: 0 !important;
+        font-size: 11px;
+        line-height: 1.18;
+    }
+    .menu-document .page {
+        box-shadow: none;
+        border: 0;
+        margin: 0;
+        max-width: none;
+        width: 100%;
+        padding: 0;
+        background: #fff;
+        background-image: none;
+        page-break-after: always;
+    }
+    .menu-document .page:last-child { page-break-after: auto; }
+    .menu-document .masthead { margin-bottom: 2px; }
+    .menu-document .logo { font-size: 2.7rem; }
+    .menu-document .sec { margin-top: 8px; padding-top: 5px; break-inside: avoid; }
+    .menu-document .sec-title { font-size: 1.4rem; margin: .05em 0 .3em; }
+    .menu-document .item { margin: .2em 0; break-inside: avoid; }
+    .menu-document .idesc { margin-top: 0; }
+    .menu-document .intro,
+    .menu-document .intro-split { margin-bottom: .32em; }
+    .menu-document .footnote { margin-top: .35em; }
+    .menu-document .disclaimer { margin-top: 9px; padding-top: 6px; }
+    .menu-document .feature-desc { margin: .06em 0; }
+    .menu-document .feature-opt { margin: .1em 0; }
+}
