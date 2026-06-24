@@ -57,9 +57,9 @@ Re-run `npm run build`.
 `npm run build`. Images live in `public/assets/images/`.
 
 **Edit the menu (items/prices)** → edit `src/content/menu-body.html`, then
-`npm run build`. The printable PDF served by the menu's download button
-(`public/assets/Brandts-of-Palatine-Menu.pdf`) is a separate file — regenerate it
-from the menu source if you change prices.
+`npm run build`. To refresh the downloadable PDF so it matches, run
+`npm run menu:pdf` (requires Chrome) — it renders the PDF straight from the HTML
+menu page, so the font (Cloister Black) and layout always match the website.
 
 **Swap homepage gallery photos** → drop images into `public/assets/images/`, then
 edit the `GALLERY` list in [`src/pages/index.js`](src/pages/index.js). Only files
