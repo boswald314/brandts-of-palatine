@@ -12,8 +12,8 @@ module.exports = {
         `
       <div class="history-grid">
         <div class="history-media">${img(
-          "file0001228971491.jpg",
-          "Inside Brandt's of Palatine"
+          "brandts-front-facade.jpeg",
+          "The historic stone farmhouse that is home to Brandt's of Palatine"
         )}</div>
         <div class="history-text">
           <p class="lede">Brandt's is a 130-year-old farmhouse that has been a
