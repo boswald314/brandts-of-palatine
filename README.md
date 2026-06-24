@@ -32,7 +32,9 @@ src/
   pages/                 ← one file per page; each returns its body HTML
     index.js menu.js party-menu.js hours.js location.js
     contact.js history.js dining.js press.js
-  content/menu-body.html ← the menu items/prices (edit here, then rebuild)
+  content/
+    menu-body.html      ← on-page menu items/prices (edit, then npm run build)
+    menu-carryout.html  ← carryout menu w/ phone → the downloadable PDF
 scripts/
   build.js              ← renders every page in src/pages → public/*.html
   serve.js              ← tiny local static server
@@ -56,10 +58,13 @@ Re-run `npm run build`.
 **Edit a page's words/images** → edit the matching file in `src/pages/`, then
 `npm run build`. Images live in `public/assets/images/`.
 
-**Edit the menu (items/prices)** → edit `src/content/menu-body.html`, then
-`npm run build`. To refresh the downloadable PDF so it matches, run
-`npm run menu:pdf` (requires Chrome) — it renders the PDF straight from the HTML
-menu page, so the font (Cloister Black) and layout always match the website.
+**Edit the on-page menu** → `src/content/menu-body.html`, then `npm run build`.
+
+**Edit the downloadable carryout PDF** → `src/content/menu-carryout.html` (a
+self-contained HTML file with the phone number in the masthead), then
+`npm run menu:pdf` (requires Chrome) to re-render
+`public/assets/Brandts-of-Palatine-Menu.pdf`. The PDF is a faithful render of that
+file, so its font (Cloister Black) and layout always match it.
 
 **Swap homepage gallery photos** → drop images into `public/assets/images/`, then
 edit the `GALLERY` list in [`src/pages/index.js`](src/pages/index.js). Only files
@@ -100,12 +105,14 @@ To use a custom domain, add a `CNAME` file to `public/` containing your domain.
   Off 53) are consolidated into one **Press** page. The Daily Herald / Patch
   newspaper articles are **linked with attribution** rather than copied, to keep
   the site clear of third-party copyrighted text.
-- **Menu:** real, responsive HTML text (not images) — content in
+- **Menu:** real, responsive HTML text (not images). The on-page menu lives in
   `src/content/menu-body.html`, styled by `public/css/menu.css`. The masthead and
   section headers use **Cloister Black** (`public/assets/fonts/`, free for personal
-  & commercial use). The "Download / Print Menu (PDF)" button serves the clean,
-  print-ready **2-page** PDF (`public/assets/Brandts-of-Palatine-Menu.pdf`) so it
-  prints correctly regardless of the browser's default paper size.
+  & commercial use). The "Download / Print Menu (PDF)" button serves a clean,
+  print-ready **2-page** carryout PDF (`public/assets/Brandts-of-Palatine-Menu.pdf`)
+  — the carryout version with the phone number in the masthead, rendered from
+  `src/content/menu-carryout.html` via `npm run menu:pdf`. It prints correctly
+  regardless of the browser's default paper size.
 - **Homepage:** the hero uses the patio photo; below it an auto-rotating gallery
   (carousel) cycles through photos — edit the `GALLERY` list in `src/pages/index.js`.
 ```
