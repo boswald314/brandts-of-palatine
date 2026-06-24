@@ -32,12 +32,15 @@ src/
   pages/                 ← one file per page; each returns its body HTML
     index.js menu.js party-menu.js hours.js location.js
     contact.js history.js dining.js press.js
+  content/menu-body.html ← the menu items/prices (edit here, then rebuild)
 scripts/
   build.js              ← renders every page in src/pages → public/*.html
   serve.js              ← tiny local static server
   scrape.js             ← one-off: pulled content+images from the live site
+  extract-menu-font.js  ← one-off: extracted the menu display font from source
 public/                  ← BUILD OUTPUT — this is what you host
-  *.html  css/  js/  assets/images/
+  *.html  css/style.css  css/menu.css  js/main.js
+  assets/images/  assets/fonts/  assets/Brandts-of-Palatine-Menu.pdf
 raw/                     ← archived copies of the original Squarespace HTML (reference)
 ```
 
@@ -52,6 +55,15 @@ Re-run `npm run build`.
 
 **Edit a page's words/images** → edit the matching file in `src/pages/`, then
 `npm run build`. Images live in `public/assets/images/`.
+
+**Edit the menu (items/prices)** → edit `src/content/menu-body.html`, then
+`npm run build`. The printable PDF served by the menu's download button
+(`public/assets/Brandts-of-Palatine-Menu.pdf`) is a separate file — regenerate it
+from the menu source if you change prices.
+
+**Swap homepage gallery photos** → drop images into `public/assets/images/`, then
+edit the `GALLERY` list in [`src/pages/index.js`](src/pages/index.js). Only files
+that exist on disk are included, in order; the first one is the lead slide.
 
 **Restyle** → `public/css/style.css`. The colors/fonts are CSS variables at the
 top (`:root`).
@@ -88,7 +100,12 @@ To use a custom domain, add a `CNAME` file to `public/` containing your domain.
   Off 53) are consolidated into one **Press** page. The Daily Herald / Patch
   newspaper articles are **linked with attribution** rather than copied, to keep
   the site clear of third-party copyrighted text.
-- **Menu:** rendered from the same scanned menu images the live site uses
-  (`2025-September-TAKE-OUT-MENU` pages 1 & 2). Replace those JPGs to update the menu,
-  or ask to convert the menu to real editable HTML text.
+- **Menu:** real, responsive HTML text (not images) — content in
+  `src/content/menu-body.html`, styled by `public/css/menu.css`. The masthead and
+  section headers use **Cloister Black** (`public/assets/fonts/`, free for personal
+  & commercial use). The "Download / Print Menu (PDF)" button serves the clean,
+  print-ready **2-page** PDF (`public/assets/Brandts-of-Palatine-Menu.pdf`) so it
+  prints correctly regardless of the browser's default paper size.
+- **Homepage:** the hero uses the patio photo; below it an auto-rotating gallery
+  (carousel) cycles through photos — edit the `GALLERY` list in `src/pages/index.js`.
 ```

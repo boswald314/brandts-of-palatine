@@ -16,6 +16,8 @@ const TYPES = {
   ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".JPG": "image/jpeg",
   ".png": "image/png", ".gif": "image/gif", ".webp": "image/webp",
   ".svg": "image/svg+xml", ".ico": "image/x-icon",
+  ".pdf": "application/pdf",
+  ".woff": "font/woff", ".woff2": "font/woff2", ".otf": "font/otf", ".ttf": "font/ttf",
 };
 
 function send(res, code, body, type) {

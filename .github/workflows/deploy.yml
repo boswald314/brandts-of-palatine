@@ -24,10 +24,9 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-      # The build step needs no dependencies (cheerio is only for scraping).
+      # No Node setup step needed: ubuntu-latest ships with Node, and the build
+      # has zero dependencies (cheerio is only used by the local scraper). This
+      # also avoids pinning an old Node version and speeds the deploy up.
       - run: node scripts/build.js
       - uses: actions/upload-pages-artifact@v3
         with:
