@@ -74,7 +74,7 @@
   <main id="main">
 
   <section class="hero">
-    <div class="hero-media"><img src="assets/images/file1781279564609.jpg" alt="Brandt's of Palatine" loading="lazy" /></div>
+    <div class="hero-media"><img src="assets/images/Patio-with-Lights.jpg" alt="Brandt's of Palatine patio with string lights at dusk" loading="lazy" /></div>
     <div class="hero-overlay"></div>
     <div class="hero-content container">
       <p class="eyebrow">Palatine, Illinois &middot; Est. 1950s</p>
@@ -122,11 +122,20 @@
 
   <section class="section gallery-section">
     <div class="container">
-      <div class="gallery">
-        <figure class="gallery-item"><img src="assets/images/Cheeseburger.png" alt="Brandt's cheeseburger" loading="lazy" /></figure>
-        <figure class="gallery-item"><img src="assets/images/file0001228971491.jpg" alt="Inside Brandt's of Palatine" loading="lazy" /></figure>
-        <figure class="gallery-item"><img src="assets/images/Patio-with-Lights.jpg" alt="Outdoor patio with lights" loading="lazy" /></figure>
-        <figure class="gallery-item"><img src="assets/images/brandts-acylic.JPG" alt="Brandt's of Palatine sign" loading="lazy" /></figure>
+      <div class="carousel" data-carousel
+        aria-roledescription="carousel" aria-label="Photos of Brandt's of Palatine">
+        <div class="carousel-viewport">
+          <figure class="carousel-slide is-active"><img src="assets/images/brandts-burger.jpg" alt="A Brandt's cheeseburger and fries at the bar" loading="lazy" /></figure>
+          <figure class="carousel-slide"><img src="assets/images/Outdoor-Dining.jpg" alt="Outdoor dining on the patio" loading="lazy" /></figure>
+          <figure class="carousel-slide"><img src="assets/images/file0001228971491.jpg" alt="Inside Brandt's of Palatine" loading="lazy" /></figure>
+        </div>
+        <button class="carousel-arrow prev" type="button" aria-label="Previous photo">&#8249;</button>
+        <button class="carousel-arrow next" type="button" aria-label="Next photo">&#8250;</button>
+        <div class="carousel-dots">
+          <button class="carousel-dot is-active" type="button" aria-label="Show photo 1"></button>
+          <button class="carousel-dot" type="button" aria-label="Show photo 2"></button>
+          <button class="carousel-dot" type="button" aria-label="Show photo 3"></button>
+        </div>
       </div>
     </div>
   </section>
