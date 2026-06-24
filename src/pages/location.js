@@ -19,7 +19,12 @@ module.exports = {
             ${a.street}<br/>
             ${a.city}, ${a.state} ${a.zip}
           </p>
-          <p>${a.note}.</p>
+          <p class="lede">On the southwest corner of Northwest Highway<br/>
+            (U.S. Route 14) and Quentin Road, right at the traffic light.</p>
+          <p>You'll find us just west of downtown Palatine and its Metra station,
+            in Chicago's northwest suburbs. Look for the historic stone farmhouse
+            with the <strong>burgers &amp; BBQ ribs</strong> neon glowing in the
+            front windows — there's parking right on the lot.</p>
           <p class="phone-line"><span class="contact-label">Phone</span>
             <a href="${site.phoneHref}">${site.phone}</a></p>
           <p>
