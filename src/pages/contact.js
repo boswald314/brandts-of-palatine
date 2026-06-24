@@ -14,7 +14,7 @@ module.exports = {
           ${contactForm()}
         </div>
         <div class="contact-aside">
-          ${img("file3991282945508.jpg", "Brandt's of Palatine")}
+          ${img("Cheeseburger.png", "A Brandt's cheeseburger")}
           ${contactCard()}
         </div>
       </div>`,

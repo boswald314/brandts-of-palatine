@@ -9,8 +9,11 @@ const { img } = require("../templates/components");
 const IMG_DIR = path.join(__dirname, "../../public/assets/images");
 const GALLERY = [
   { file: "brandts-burger.jpg", alt: "A Brandt's cheeseburger and fries at the bar" },
+  { file: "patio-night.jpg", alt: "The covered patio lit up at night" },
+  { file: "boneless-wings.jpg", alt: "A basket of Brandt's boneless wings with ranch" },
+  { file: "Patio-with-Lights.jpg", alt: "The patio at dusk with string lights" },
+  { file: "old-fashioneds.jpg", alt: "Old fashioned cocktails at the bar" },
   { file: "Outdoor-Dining.jpg", alt: "Outdoor dining on the patio" },
-  { file: "file0001228971491.jpg", alt: "Inside Brandt's of Palatine" },
 ].filter((g) => fs.existsSync(path.join(IMG_DIR, g.file)));
 
 module.exports = {
@@ -21,8 +24,8 @@ module.exports = {
     return `
   <section class="hero">
     <div class="hero-media">${img(
-      "Patio-with-Lights.jpg",
-      "Brandt's of Palatine patio with string lights at dusk"
+      "brandts-sunset.jpg",
+      "Brandt's of Palatine at sunset, with the burgers and BBQ ribs neon glowing"
     )}</div>
     <div class="hero-overlay"></div>
     <div class="hero-content container">
