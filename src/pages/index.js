@@ -29,7 +29,7 @@ module.exports = {
     )}</div>
     <div class="hero-overlay"></div>
     <div class="hero-content container">
-      <p class="eyebrow">Palatine, Illinois &middot; Est. 1950s</p>
+      <p class="eyebrow">Palatine, Illinois &middot; Est. 1950<span style="text-transform: lowercase">s</span></p>
       <h1>${site.name}</h1>
       <p class="hero-tag">A neighborhood tavern in a 130-year-old farmhouse — burgers,
         cold drinks, and good company for over half a century.</p>
