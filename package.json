@@ -7,6 +7,7 @@
     "scrape": "node scripts/scrape.js",
     "build": "node scripts/build.js",
     "serve": "node scripts/serve.js",
+    "menu": "python3 menu/build.py && npm run build && npm run menu:pdf",
     "menu:pdf": "bash scripts/make-menu-pdf.sh"
   },
   "dependencies": {

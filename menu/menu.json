@@ -1,0 +1,444 @@
+{
+  "brand": {
+    "name": "Brandt's",
+    "subtitle": "OF PALATINE",
+    "phone": "847-496-4388"
+  },
+  "revision": "9/25",
+  "disclaimer": "Consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase your risk of food borne illness.",
+  "pages": [
+    {
+      "id": "page-1",
+      "sections": [
+        {
+          "id": "starters",
+          "title": "starters",
+          "hand": true,
+          "layout": "split",
+          "footnote": "add dipping sauce to any appetizer .35¢ each",
+          "columns": [
+            [
+              {
+                "name": "Jack's Boneless Wings",
+                "price": "14.25",
+                "desc": "tossed in hot, mild, bbq, garlic parm, teriyaki, bang bang, or spicy honey garlic"
+              },
+              {
+                "name": "Jumbo Wings - Bone In",
+                "price": "11.99 (6)    20.99 (12)",
+                "desc": "hot, mild, bbq, garlic parm, teriyaki, bang bang, spicy honey garlic"
+              },
+              {
+                "name": "Homemade Potato Skins (6)",
+                "price": "11.50",
+                "desc": "cheese, bacon, green onion.  add pulled pork 3.50"
+              },
+              {
+                "name": "BBQ Rib Appetizer",
+                "price": "Half 14.95    Full 20.95"
+              },
+              {
+                "name": "Chicken Strips Appetizer",
+                "price": "13.99",
+                "desc": "homemade batter, made to order"
+              },
+              {
+                "name": "Onion Rings",
+                "price": "11.50"
+              }
+            ],
+            [
+              {
+                "name": "Homemade Wisconsin Cheese Curds",
+                "price": "13.25",
+                "desc": "fresh, made to order in our homemade batter"
+              },
+              {
+                "name": "Homemade Fried Pickles",
+                "price": "12.25",
+                "desc": "fresh, made to order in our homemade batter"
+              },
+              {
+                "name": "Firecracker Shrimp",
+                "price": "14.50",
+                "desc": "fresh, made to order in our homemade batter, tossed in Bang Bang sauce"
+              },
+              {
+                "name": "Homemade Fresh Cut Potato Chips",
+                "price": "4.75"
+              },
+              {
+                "name": "Homemade Chips & Salsa",
+                "price": "6.99",
+                "desc": "add guacamole 2.00"
+              },
+              {
+                "name": "Breaded Mushrooms",
+                "price": "10.50"
+              }
+            ]
+          ]
+        },
+        {
+          "id": "the-burger",
+          "title": "The Brandt's Burger",
+          "layout": "feature",
+          "price": "15.50",
+          "desc": [
+            "Our famous, preservative free, fresh ground combo of short loin and deep chuck ½ lbs burger - made to order",
+            "Served with lettuce, tomato, onion (raw/grilled/blackened), pickles, choice of potato & homemade coleslaw or baked beans."
+          ],
+          "options": [
+            "BUNS: Sesame, Butter, or Pretzel (add .75)",
+            "BREADS: Sourdough, Light Rye or Dark Rye",
+            "GF: lettuce wrap",
+            "CHEESE: Swiss, Provolone, Muenster, Cheddar, Monterey Jack, Pepper Jack, American or Blue ($1.00)"
+          ],
+          "columns": [
+            [
+              {
+                "name": "Jalapeno",
+                "price": ".50"
+              },
+              {
+                "name": "Pico de Gallo",
+                "price": ".50"
+              },
+              {
+                "name": "Hardwood Bacon",
+                "price": "1.50"
+              }
+            ],
+            [
+              {
+                "name": "Guacamole",
+                "price": "1.25"
+              },
+              {
+                "name": "Egg",
+                "price": "1.50"
+              },
+              {
+                "name": "Sautéed Mushrooms",
+                "price": "1.00"
+              }
+            ]
+          ]
+        },
+        {
+          "id": "specialty-burgers",
+          "title": "burgers built by Brandt's",
+          "intro": "Specialty burger combinations with choice of potato and homemade coleslaw or baked beans on the side.",
+          "layout": "list",
+          "items": [
+            {
+              "name": "Brandt's Sliders",
+              "hand": true,
+              "price": "13.50 (2)    15.75 (3)    21.50 (5)"
+            },
+            {
+              "name": "Patty Melt",
+              "price": "16.50",
+              "desc": "American cheese, grilled onions on light or dark rye toast"
+            },
+            {
+              "name": "Quesadilla Burger",
+              "price": "16.50",
+              "desc": "loaded with homemade pico de gallo, a blend of monterey and cheddar cheeses, guacamole, sour cream on a tortilla"
+            },
+            {
+              "name": "Black & Blue Burger",
+              "price": "16.50",
+              "desc": "cajun spices, grilled onions, topped with our fresh Wisconsin Blue cheese"
+            },
+            {
+              "name": "BBQ Burger",
+              "price": "16.50",
+              "desc": "bold BBQ sauce, cheddar cheese topped with an onion ring"
+            },
+            {
+              "name": "Sunrise Burger",
+              "price": "18.50",
+              "desc": "topped with a fried egg, bacon & cheddar cheese"
+            }
+          ]
+        },
+        {
+          "id": "bbq-ribs",
+          "title": "bbq ribs",
+          "intro": "Famous, fall off the bone!  Served with choice of potato & baked beans or homemade coleslaw",
+          "layout": "split",
+          "columns": [
+            [
+              {
+                "name": "Full Slab",
+                "price": "25.50"
+              },
+              {
+                "name": "Half Slab",
+                "price": "18.50"
+              }
+            ],
+            [
+              {
+                "name": "Half Slab & Fried Shrimp",
+                "price": "25.50"
+              },
+              {
+                "name": "Half Slab & 2 Sliders",
+                "price": "25.50"
+              }
+            ]
+          ]
+        },
+        {
+          "id": "kids",
+          "title": "Brandt's buddies",
+          "eyebrow": "For Kids",
+          "intro": "Kids 10 & under - includes milk, juice or soft drink, choice of potato and ice cream sandwich  $9.99",
+          "layout": "split-three",
+          "columns": [
+            [
+              {
+                "name": "Brandt's Sliders (2)"
+              },
+              {
+                "name": "Mac & Cheese"
+              }
+            ],
+            [
+              {
+                "name": "Noodles",
+                "desc": "marinara or buttered"
+              }
+            ],
+            [
+              {
+                "name": "Chicken Strips"
+              },
+              {
+                "name": "Grilled Cheese"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "page-2",
+      "sections": [
+        {
+          "id": "salads",
+          "title": "salads, soups & chili",
+          "hand": true,
+          "intro_left": "All homemade, fresh daily.  Make any wrap into a salad.",
+          "intro_right": "Add Chicken - grilled, fried, buffalo, or blackened $5.75",
+          "layout": "split",
+          "footnote": "DRESSINGS: Homemade Blue Cheese, 1000 Island, Homemade Creamy Garlic, Balsamic Vinegar, Ranch",
+          "columns": [
+            [
+              {
+                "name": "Caesar Salad",
+                "price": "10.95"
+              },
+              {
+                "name": "House Salad",
+                "price": "8.95",
+                "desc": "cucumber, tomatoes, red onion, croutons:  add cheese or bacon .50¢ ea"
+              },
+              {
+                "name": "Side Salad",
+                "price": "5.95"
+              }
+            ],
+            [
+              {
+                "name": "Chili (Seasonal)",
+                "price": "4.99 / 6.25",
+                "desc": "add jalapeno .50¢"
+              },
+              {
+                "name": "Soup of the Day",
+                "price": "4.99 / 6.25"
+              },
+              {
+                "name": "Bowl of Soup / Side Salad Combo",
+                "price": "12.25"
+              }
+            ]
+          ]
+        },
+        {
+          "id": "fresh-fish",
+          "title": "fresh fish",
+          "intro": "Choice of potato and homemade coleslaw or baked beans",
+          "layout": "split",
+          "columns": [
+            [
+              {
+                "name": "Baja Fish Tacos (3)",
+                "price": "14.99",
+                "desc": "grilled cod OR firecracker shrimp, topped with cilantro slaw & chipotle lime sauce"
+              },
+              {
+                "name": "Catfish Platter - grilled or fried",
+                "price": "15.50"
+              },
+              {
+                "name": "Fish & Chips",
+                "price": "15.50",
+                "desc": "homemade battered Cod"
+              }
+            ],
+            [
+              {
+                "name": "Salmon Platter",
+                "price": "17.99",
+                "desc": "8oz glazed with choice of honey mustard, teriyaki glaze, or garlic Parmesan"
+              },
+              {
+                "name": "Jumbo Fried Shrimp",
+                "price": "18.95"
+              },
+              {
+                "name": "Cod Sandwich",
+                "price": "15.50"
+              }
+            ]
+          ]
+        },
+        {
+          "id": "sandwiches",
+          "title": "sandwiches, wraps & quesadillas",
+          "hand": true,
+          "intro": "Choice of potato and homemade coleslaw or baked beans (excludes quesadilla)",
+          "layout": "list",
+          "items": [
+            {
+              "name": "Homemade Chicken Strips",
+              "price": "15.25",
+              "desc": "fresh, home battered, made to order"
+            },
+            {
+              "name": "Fresh Wisconsin Brat",
+              "price": "13.50",
+              "desc": "on onion bun with sauerkraut & choice of raw or grilled onions"
+            },
+            {
+              "name": "Chicken Quesadilla",
+              "price": "14.25",
+              "desc": "loaded with chicken, cheese, jalapenos, onion, side of sour cream    add bacon 1.50    add guacamole 1.25"
+            },
+            {
+              "name": "Pulled Pork Sandwich",
+              "price": "14.99"
+            },
+            {
+              "name": "Corned Beef Sandwich",
+              "price": "15.25"
+            },
+            {
+              "name": "Reuben Sandwich",
+              "price": "15.25",
+              "desc": "topped with sauerkraut & 1000 Island dressing"
+            },
+            {
+              "name": "BLT",
+              "price": "12.75",
+              "desc": "bacon, lettuce, tomato on sourdough.  mayo on request"
+            },
+            {
+              "name": "Chicken Sandwich",
+              "price": "15.25",
+              "desc": "grilled or fried, choose plain, buffalo or bbq sauce    add cheese 1.00"
+            },
+            {
+              "name": "BBQ Chicken Wrap",
+              "price": "14.99",
+              "desc": "bold bbq sauce, cheddar, tortilla strips, red onion, lettuce, tomato with ranch dressing on spinach tortilla"
+            },
+            {
+              "name": "Southwest Chicken Wrap",
+              "price": "14.99",
+              "desc": "black beans, corn, homemade pico de gallo, sour cream, guacamole, Jack & Cheddar cheeses, lettuce, jalapeno cheese tortilla"
+            },
+            {
+              "name": "Buffalo Chicken Wrap",
+              "price": "14.99",
+              "desc": "cheddar cheese, lettuce, tomato, bacon & blue cheese or ranch dressing on flour tortilla"
+            },
+            {
+              "name": "Grilled Chicken Wrap",
+              "price": "14.99",
+              "desc": "lettuce, tomato, bacon, choice of cheese and dressing on flour tortilla"
+            },
+            {
+              "name": "Grilled Cheese Sandwich",
+              "price": "11.75",
+              "desc": "choice of cheese, tomato optional.  add bacon 1.50    Make it a combo with a cup of soup - add 4.75"
+            }
+          ]
+        },
+        {
+          "id": "potato-choices",
+          "title": "potato choices",
+          "layout": "inline",
+          "items": [
+            {
+              "name": "Homemade Fresh Cut Fries"
+            },
+            {
+              "name": "Steak Fries"
+            },
+            {
+              "name": "Homemade Potato Chips"
+            },
+            {
+              "name": "Sweet Potato Fries (add .99¢)"
+            },
+            {
+              "name": "Baked Potato"
+            },
+            {
+              "name": "Loaded Baked Potato (add 2.50)"
+            }
+          ]
+        },
+        {
+          "id": "beverages",
+          "title": "beverages",
+          "layout": "split-three",
+          "columns": [
+            [
+              {
+                "name": "Bottled Root Beer",
+                "price": "3.50"
+              },
+              {
+                "name": "Milk, plain or chocolate",
+                "price": "sm 1.75 / lg 3.00"
+              }
+            ],
+            [
+              {
+                "name": "Coffee or Hot Tea",
+                "price": "2.50"
+              },
+              {
+                "name": "Hot Chocolate",
+                "price": "3.00"
+              }
+            ],
+            [
+              {
+                "name": "Fountain (Free Refills)",
+                "price": "3.79",
+                "desc": "Coke, Diet Coke, Sprite, Cherry Coke, Iced Tea, Pink Lemonade, Ginger Ale"
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

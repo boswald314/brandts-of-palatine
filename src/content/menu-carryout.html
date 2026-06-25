@@ -199,10 +199,9 @@ body{
 /* ---------------- print / PDF ---------------- */
 @media print{
   @page{ size:8.5in 14in; margin:0.36in 0.5in; }
-  /* We print on warm cream stock, so the PDF itself stays WHITE/transparent
-     (a cream fill would muddy the colored paper). The cream + grain is
-     screen-only — the shorthand below resets the page background image. */
-  /* Root font-size scales every rem-based size to fill the legal page. */
+  /* Sizes tuned so the legal (8.5x14) sheet fills top-to-bottom without spilling
+     onto a third page. The root font-size scales every rem-based size at once.
+     The page stays WHITE (we print on cream stock; a cream fill would muddy it).*/
   html{font-size:19.5px;}
   body{background:#fff;font-size:13.3px;line-height:1.25;}
   .page{
